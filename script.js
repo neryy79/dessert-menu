@@ -1,5 +1,5 @@
 // Número internacional sin + ni espacios. Se conserva la configuración existente.
-const whatsappNumber = '595981269140';
+const whatsappNumber = '';
 
 const products = [
   {
