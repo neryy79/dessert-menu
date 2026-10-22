@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#f7f5f0">
+    <meta name="description" content="Postres artesanales para compartir o darte un gusto. Explora el catálogo y pide por WhatsApp.">
+    <title>Catálogo de postres — Miga &amp; Miel</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Saltar al contenido</a>
+    <div class="announce">HECHO A MANO, CON MUCHO AMOR <span>✳</span> PEDIDOS POR WHATSAPP</div>
+    <header class="header">
+      <div class="wrap nav">
+        <a class="brand" href="#inicio" aria-label="Miga y Miel, ir al inicio">
+          <span class="mark" aria-hidden="true">✳</span>Miga &amp; Miel</a>
+        <nav class="links" id="links" aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a>
+          <a href="#catalogo">Catálogo</a>
+          <a href="#favoritos">Más pedidos</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <button class="pill cart-trigger" id="open-cart" type="button" aria-haspopup="dialog" aria-controls="cart-dialog" aria-label="Abrir carrito de compras, 0 productos"><span>Carrito</span><span class="cart-count" id="cart-count" aria-hidden="true">0</span></button>
+        <button class="toggle" type="button" aria-expanded="false" aria-controls="links" aria-label="Abrir menú de navegación">☰</button>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero" id="inicio">
+        <div class="wrap hero-grid">
+          <div>
+            <div class="eyebrow">Pastelería artesanal</div>
+            <h1>Un pequeño<br>momento <em>dulce.</em>
+            </h1>
+            <p class="hero-copy">Postres hechos a mano, con ingredientes ricos y ese sabor que invita a compartir. Encuentra tu próximo favorito.</p>
+            <div class="actions">
+              <a class="btn" href="#catalogo">Ver catálogo <span aria-hidden="true">→</span>
+              </a>
+              <a class="text-link" href="#favoritos">Los más pedidos <span aria-hidden="true">→</span>
+              </a>
+            </div>
+            <p class="tiny">✦ Pequeños lotes, recién horneados</p>
+          </div>
+          <div class="art">
+            <div class="hero-photo">
+              <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&amp;fit=crop&amp;w=1200&amp;h=1300&amp;q=85&amp;fm=webp" alt="Brownies de chocolate húmedos con trozos de nuez" fetchpriority="high">
+              <span class="credit">Foto: Unsplash</span>
+            </div>
+            <div class="sticker" aria-label="Horneado con cariño">un antojo<br>hecho con<br>cariño</div>
+          </div>
+        </div>
+      </section>
+      <section class="section popular" id="favoritos">
+        <div class="wrap">
+          <div class="head">
+            <div>
+              <div class="eyebrow">Para empezar</div>
+              <h2>Los más pedidos</h2>
+            </div>
+            <p>Clásicos que siempre alegran la mesa. Elige tu favorito y cuéntanos cuántos quieres.</p>
+          </div>
+          <div class="popular-grid">
+            <article class="feature">
+              <div class="feature-copy">
+                <span class="tag">El favorito de la casa</span>
+                <h3>Brownie<br>de chocolate</h3>
+                <p>Intenso por fuera, suavecito y fundente en el centro.</p>
+                <a class="text-link" href="#producto-brownie">Descubrir <span aria-hidden="true">→</span>
+                </a>
+              </div>
+              <div class="photo">
+                <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&amp;fit=crop&amp;w=900&amp;h=700&amp;q=82&amp;fm=webp" alt="Brownie casero de chocolate, protagonista del catálogo" loading="lazy">
+              </div>
+            </article>
+            <article class="mini">
+              <div>
+                <div class="eyebrow">Una novedad</div>
+                <h3>Rollos de<br>canela</h3>
+                <p>Masa tierna, canela aromática y glaseado cremoso.</p>
+                <a class="btn" href="#producto-rollo">Ver en catálogo</a>
+              </div>
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80&amp;fm=webp" alt="Panecillo dorado recién horneado" loading="lazy">
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="catalog" id="catalogo">
+        <div class="wrap">
+          <div class="head">
+            <div>
+              <div class="eyebrow">Algo rico te espera</div>
+              <h2>Catálogo de postres</h2>
+            </div>
+            <p>Desde un gustito individual hasta una torta para compartir. Precios en guaraníes.</p>
+          </div>
+          <div class="tools">
+            <label class="search">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="10.8" cy="10.8" r="6.3" stroke="currentColor" stroke-width="1.7"/>
+                <path d="m16 16 4 4" stroke="currentColor" stroke-width="1.7"/>
+              </svg>
+              <input id="search" type="search" placeholder="Buscar un postre…" aria-label="Buscar postres por nombre o ingrediente">
+            </label>
+            <div class="filters" role="group" aria-label="Filtrar por ingrediente o preferencia">
+              <button class="filter" data-filter="all" aria-pressed="true">Todo</button>
+              <button class="filter" data-filter="chocolate" aria-pressed="false">Chocolate</button>
+              <button class="filter" data-filter="frutas" aria-pressed="false">Frutas</button>
+              <button class="filter" data-filter="vegano" aria-pressed="false">Vegano</button>
+            </div>
+          </div>
+          <div class="categories" role="group" aria-label="Filtrar por categoría">
+            <button class="category" data-category="all" aria-pressed="true">Todos los postres</button>
+            <button class="category" data-category="tartas" aria-pressed="false">Tortas &amp; tartas</button>
+            <button class="category" data-category="individuales" aria-pressed="false">Porciones individuales</button>
+            <button class="category" data-category="horneados" aria-pressed="false">Horneados</button>
+            <button class="category" data-category="eventos" aria-pressed="false">Combos para eventos</button>
+          </div>
+          <p class="results" id="results" aria-live="polite">6 postres para descubrir</p>
+          <div class="grid" id="grid">
+          </div>
+        </div>
+      </section>
+      <section class="values" aria-label="Nuestro compromiso">
+        <div class="wrap values-grid">
+          <div class="value">
+            <span class="value-icon" aria-hidden="true">♡</span>
+            <div>
+              <h3>Hecho con cariño</h3>
+              <p>Preparado en pequeños lotes para cuidar cada detalle.</p>
+            </div>
+          </div>
+          <div class="value">
+            <span class="value-icon" aria-hidden="true">✿</span>
+            <div>
+              <h3>Ingredientes de calidad</h3>
+              <p>Sabores ricos con ingredientes reconocibles.</p>
+            </div>
+          </div>
+          <div class="value">
+            <span class="value-icon" aria-hidden="true">↗</span>
+            <div>
+              <h3>Entrega coordinada</h3>
+              <p>Consulta cobertura y costo de delivery por WhatsApp.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contacto">
+        <div class="wrap contact-grid">
+          <div>
+            <div class="eyebrow">Hablemos de algo rico</div>
+            <h2>Tu próximo antojo<br>está a un mensaje.</h2>
+            <p class="contact-copy">Cuéntanos qué te gustaría, para cuándo y en qué zona. Te confirmamos disponibilidad, tiempo de preparación y delivery.</p>
+            <div class="info-grid">
+              <div class="info">
+                <strong>Atención</strong>Escríbenos y coordinamos</div>
+              <div class="info">
+                <strong>Preparación</strong>Consultar según producto</div>
+              <div class="info">
+                <strong>Delivery</strong>Consultar zona y costo</div>
+              <div class="info">
+                <strong>Eventos</strong>Consultar con anticipación</div>
+            </div>
+            <div class="social">
+              <a href="https://www.instagram.com/npda____?dlrf=YWJ0ZWlreDhvcnNz" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram en otra pestaña">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.6"/>
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/>
+                  <circle cx="17.5" cy="6.8" r="1" fill="currentColor"/>
+                </svg>
+              </a>
+              <a class="wa-link" href="https://wa.me/595981269140?text=Hola%2C%20quiero%20consultar%20por%20los%20postres%20de%20Miga%20%26%20Miel." target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp en otra pestaña">☏</a>
+            </div>
+          </div>
+          <aside class="contact-card">
+            <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&amp;fit=crop&amp;w=850&amp;h=420&amp;q=82&amp;fm=webp" alt="Torta artesanal decorada con crema" loading="lazy">
+            <h3>¿Tienes una celebración?</h3>
+            <p>Armamos opciones para compartir. Escríbenos con la fecha y cantidad de personas.</p>
+            <a class="btn wa-link" href="https://wa.me/595981269140?text=Hola%2C%20quiero%20consultar%20por%20una%20torta%20para%20una%20celebraci%C3%B3n." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp <span aria-hidden="true">→</span>
+            </a>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <a class="brand" href="#inicio">
+            <span class="mark" aria-hidden="true">✳</span>Miga &amp; Miel</a>
+          <span class="foot-note">Un pequeño momento dulce, hecho a mano.</span>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="year">
+            </span> Miga &amp; Miel · Catálogo de postres</span>
+          <span>Fotos: <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer">Licencia de Unsplash</a> · Formato WebP solicitado.</span>
+        </div>
+      </div>
+    </footer>
+    <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+      <div class="cart-panel">
+        <header class="cart-heading">
+          <div><h2 id="cart-title">Tu carrito</h2><p id="cart-description">Revisa tu pedido antes de enviarlo.</p></div>
+          <button class="icon-button" id="close-cart" type="button" aria-label="Cerrar carrito">×</button>
+        </header>
+        <div class="cart-list" id="cart-list" aria-live="polite"></div>
+        <footer class="cart-summary">
+          <div class="cart-total"><span>Total del pedido</span><strong id="cart-total">Gs. 0</strong></div>
+          <div class="cart-actions"><button class="clear-cart" id="clear-cart" type="button">Vaciar carrito</button><button class="btn" id="checkout" type="button">Enviar pedido por WhatsApp</button></div>
+        </footer>
+      </div>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite">
+    </div>
+
+    <script src="script.js" defer>
+    </script>
+  </body>
+</html>
+
+
